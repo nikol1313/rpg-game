@@ -172,9 +172,5 @@ while not battle_queue.is_empty():
         if fighter.hp > 0:
             battle_queue.enqueue(fighter)
     if player.hp <= 0 or enemy.hp <= 0:
-        if random.random() < 0.5:
-            print("THE PLAYER RESSURECTED, CONTINUING THE GAME:")
-            battle_queue.enqueue(fighter)
-        else:
             print("Battle ended!")
             break
